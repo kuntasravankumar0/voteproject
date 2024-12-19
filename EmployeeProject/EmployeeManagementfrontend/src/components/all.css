@@ -1,0 +1,523 @@
+/* Custom container with max width */
+.custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Form card styling */
+.form-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Header of the form */
+.form-header {
+    text-align: center;
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+.input-group label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input field styling */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Save button styling */
+.save-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Cancel button styling */
+.cancel-btn {
+    background-color: #f44336; /* Red background */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancel-btn:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .form-card {
+        padding: 15px;
+    }
+
+    .input-field {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .save-btn, .cancel-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+
+
+/* footer */
+  /* Main content should take up the available space */
+  .main-content {
+    /* flex-grow: 1; */
+    margin-top: 100px;
+  }
+  
+  /* Footer styles */
+  .footer-container {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+  }
+  
+ 
+
+
+
+
+/* hedder */
+
+
+  /* Navbar Styles */
+.navbar {
+    background-color: #1566b7; /* Dark background */
+    padding: 10px 0; /* Reduced padding for a smaller navbar */
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center; /* Vertically center */
+  }
+  
+  .navbar .container {
+    width: 100%;
+    max-width: 1200px; /* Optional: adjust the max width */
+    padding: 0 20px;
+  }
+  
+  /* Styling for the brand */
+  .navbar .navbar-brand {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.6rem; /* Adjust font size for smaller navbar */
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .navbar .navbar-brand:hover {
+    color: #3498db; /* Blue color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 8px 0; /* Smaller padding for small screens */
+    }
+  
+    .navbar .navbar-brand {
+      font-size: 1.4rem; /* Smaller font size for smaller screens */
+    }
+  }
+  
+
+
+
+  /* update */
+  
+
+/* Form Card Styling */
+.form-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Heading Style */
+.form-heading {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label Styling */
+.form-label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input field styling */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #fff;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.save-btn, .cancel-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #218838;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+}
+
+.cancel-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-card {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .form-heading {
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+/* looad */
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 22px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #F10C49;
+    animation: l10 1.5s infinite linear;
+  }
+  @keyframes l10 {
+    0%    {box-shadow: 
+            0 -30px #F4DD51, calc(30px*0.707) calc(-30px*0.707) #E3AAD6,30px 0 #F4DD51, 0 0 #E3AAD6,
+            0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6}
+    12.5% {box-shadow: 
+            0 0 #F4DD51, calc(30px*0.707) calc(-30px*0.707) #E3AAD6,30px 0 #F4DD51, calc(30px*0.707) calc(30px*0.707) #E3AAD6,
+            0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6}
+    25%   {box-shadow: 
+            0 0 #F4DD51, 0 0 #E3AAD6,30px 0 #F4DD51, calc(30px*0.707) calc(30px*0.707) #E3AAD6,
+            0 30px #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6}
+    37.5% {box-shadow: 
+            0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, calc(30px*0.707) calc(30px*0.707) #E3AAD6,
+            0 30px #F4DD51, calc(-30px*0.707) calc(30px*0.707) #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6}
+    50%   {box-shadow: 
+            0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6,
+            0 30px #F4DD51, calc(-30px*0.707) calc(30px*0.707) #E3AAD6,-30px 0 #F4DD51, 0 0 #E3AAD6}
+    62.5% {box-shadow: 
+            0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6,
+            0 0 #F4DD51, calc(-30px*0.707) calc(30px*0.707) #E3AAD6,-30px 0 #F4DD51, calc(-30px*0.707) calc(-30px*0.707) #E3AAD6}
+    75%   {box-shadow: 
+            0 -30px #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6,
+            0 0 #F4DD51, 0 0 #E3AAD6,-30px 0 #F4DD51, calc(-30px*0.707) calc(-30px*0.707) #E3AAD6}
+    87.5% {box-shadow: 
+            0 -30px #F4DD51, calc(30px*0.707) calc(-30px*0.707) #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6,
+            0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, calc(-30px*0.707) calc(-30px*0.707) #E3AAD6}
+    100%  {box-shadow: 
+            0 -30px #F4DD51, calc(30px*0.707) calc(-30px*0.707) #E3AAD6,30px 0 #F4DD51, 0 0 #E3AAD6,
+            0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6}
+  
+  }
+
+
+  /* Container for the employee list */
+.employee-list-container {
+    padding: 20px;
+}
+
+/* Center the text for the heading */
+.text-center {
+    text-align: center;
+}
+
+/* Styling the Add Employee button */
+.add-employee-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-employee-btn:hover {
+    background-color: #45a049;
+}
+
+/* Styling the table */
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.employee-table th, .employee-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.employee-table th {
+    background-color: #f4f4f4;
+}
+
+.employee-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-size: 18px;
+}
+
+/* Styling the update and delete buttons */
+.update-btn, .delete-btn {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.update-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.update-btn:hover {
+    background-color: #0b7dda;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+
+
+
+/* home *//* General container */
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Ensures the content is centered and does not stretch too far on wide screens */
+  }
+  
+  /* Header styling */
+  .header {
+    text-align: center;
+    background-color: #282c34;
+    padding: 40px 20px; /* Added more vertical padding to make the header more prominent */
+    color: white;
+    border-radius: 10px; /* Optional: adds rounded corners */
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 3rem; /* Increased the font size to make it more prominent */
+  }
+  
+  .header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 300; /* Lighter weight for subheading */
+  }
+  
+  /* Section styling */
+  .overview-section, .architecture-section, .technologies-section {
+    margin-bottom: 40px; /* Increased bottom margin for spacing between sections */
+    padding: 20px;
+    border-radius: 10px; /* Optional: adds rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to sections for depth */
+    background-color: #f9f9f9; /* Light background to contrast with the header */
+  }
+  
+  h2 {
+    font-size: 2rem;  /* Adjusted size similar to h1 */
+    color: #333;      /* Dark color for visibility */
+    margin-bottom: 15px; /* Increased space below the h2 for better separation */
+    font-weight: 600; /* Slightly bolder for better emphasis */
+  }
+  
+  /* Styling ul like h1 (list styling) */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    padding-top: 10px;  /* Increased spacing for readability */
+  }
+  
+  ul li {
+    margin: 8px 0; /* Added more spacing between list items */
+    line-height: 1.6; /* Increased line-height for better readability */
+  }
+  
+  /* Technology list section */
+  .technologies-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures the list wraps on smaller screens */
+    gap: 20px; /* Spacing between tech categories */
+  }
+  
+  .tech-category {
+    width: 30%;
+    min-width: 250px; /* Ensures the categories are not too narrow on small screens */
+  }
+  
+  .tech-category h3 {
+    font-size: 1.6rem; /* Slightly smaller than h2 for hierarchy */
+    margin-bottom: 10px;
+    color: #1566b7; /* Color to emphasize technology category */
+  }
+  
+  .tech-category ul {
+    padding-left: 20px;
+  }
+  
+  .tech-category ul li {
+    margin: 5px 0;
+    font-size: 1.1rem; /* Slightly smaller font for items in tech categories */
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2.2rem; /* Slightly smaller header for small screens */
+    }
+  
+    .header p {
+      font-size: 1rem; /* Smaller subheading */
+    }
+  
+    .overview-section, .architecture-section, .technologies-section {
+      padding: 15px; /* Reduced padding for smaller screens */
+    }
+  
+    .technologies-list {
+      flex-direction: column; /* Stack the tech categories on smaller screens */
+      align-items: center; /* Center the categories */
+    }
+  
+    .tech-category {
+      width: 80%; /* Ensure tech categories take up more space on small screens */
+    }
+  }
+  
