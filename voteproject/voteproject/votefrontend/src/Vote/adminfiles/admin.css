@@ -1,0 +1,375 @@
+/* General container for the form */
+.voter-register-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  /* Error message */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Label styling */
+  label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  /* Input fields styling */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="number"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* OTP Button and Generated OTP display */
+  button[type="button"] {
+    background-color: #ff9800;
+    margin-right: 10px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #e68900;
+  }
+  
+  span {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* For responsiveness, ensuring the form adjusts on mobile screens */
+  @media (max-width: 600px) {
+    .voter-register-container {
+      padding: 15px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="number"] {
+      font-size: 14px;
+    }
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* admin */
+
+
+/* Form Container */
+.login-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+/* Form Heading */
+.login-form__title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Instructions */
+.login-form__instructions {
+  color: #777;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Labels */
+.input-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Error Message */
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.primary-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+.primary-button:hover {
+  background-color: #45a049;
+}
+
+/* Disabled Button Styles */
+.primary-button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+/* OTP Information */
+.otp-info-text {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Go to Login Button */
+.redirect-button {
+  background-color: #2196F3;
+  margin-top: 20px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.redirect-button:hover {
+  background-color: #1976D2;
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* loaded */
+  .loader {
+    transform: rotateZ(45deg);
+    perspective: 1000px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    color: rgb(46, 0, 232);
+  }
+    .loader:before,
+    .loader:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      transform: rotateX(70deg);
+      animation: 1s spin linear infinite;
+    }
+    .loader:after {
+      color: #FF3D00;
+      transform: rotateY(70deg);
+      animation-delay: .4s;
+    }
+
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+  }
+
+  @keyframes rotateccw {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+  }
+
+  @keyframes spin {
+    0%,
+    100% {
+      box-shadow: .2em 0px 0 0px currentcolor;
+    }
+    12% {
+      box-shadow: .2em .2em 0 0 currentcolor;
+    }
+    25% {
+      box-shadow: 0 .2em 0 0px currentcolor;
+    }
+    37% {
+      box-shadow: -.2em .2em 0 0 currentcolor;
+    }
+    50% {
+      box-shadow: -.2em 0 0 0 currentcolor;
+    }
+    62% {
+      box-shadow: -.2em -.2em 0 0 currentcolor;
+    }
+    75% {
+      box-shadow: 0px -.2em 0 0 currentcolor;
+    }
+    87% {
+      box-shadow: .2em -.2em 0 0 currentcolor;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Style for the overall container */
+  
+/* Style for each input field group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+/* Profile preview section */
+.profile-preview {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.profile-preview h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style for profile and flag images */
+.profile-preview img {
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  max-width: 150px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style for the name and age details */
+.profile-preview p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}

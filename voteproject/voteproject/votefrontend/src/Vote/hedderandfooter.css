@@ -1,0 +1,76 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+    font-family: Arial, sans-serif; /* Optional for consistency */
+    font-size: 2rem;
+}
+
+h2 {
+    color: blueviolet;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Inline-block elements */
+.inline {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+}
+
+/* Image styling */
+.image1 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Ensures the image fills the box without distortion */
+}
+
+/* Header styles */
+.box1 {
+    border: 2px solid rgb(48, 26, 26);
+}
+
+.aright {
+    display: flex;
+    justify-content: flex-end; /* Use flexbox to align right without large padding */
+    padding: 0;
+}
+
+/* Footer styles */
+.footer-container {
+    background-color: #282c34;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.footer-links a:hover {
+    color: #61dafb;
+}
+
+/* Flexbox container for the main app */
+#app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer-container {
+    margin-top: auto;
+}

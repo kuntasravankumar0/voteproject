@@ -1,0 +1,392 @@
+/* General Page Layout */
+.home-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+.main-heading {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Image Styling */
+.image-container {
+    flex: 1;
+    max-width: 40%;
+}
+
+.image1 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+.text-container {
+    flex: 2;
+    max-width: 55%;
+    line-height: 1.6;
+}
+
+.subheading {
+    font-size: 28px;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container, .text-container {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Main container */
+.voting-info {
+ 
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h2 {
+  font-size: 2rem;
+  color: #2d6dcf; /* Primary color for headings */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+/* Strong text for emphasis */
+strong {
+  color: #2d6dcf; /* Match heading color */
+  font-weight: 700;
+}
+
+/* List Styles */
+ul {
+  list-style-type: disc;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Styling for Paragraph and List borders */
+p, ul {
+  border-left: 5px solid #2d6dcf;
+  padding-left: 20px;
+  background-color: #f9faff;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+p:hover, ul:hover {
+  transform: translateX(10px); /* Subtle hover effect for interaction */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover for emphasis */
+}
+
+/* Card style for each section */
+.voting-info > *:not(h2):not(h3) {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.voting-info > *:not(h2):not(h3):hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* Button style for action (e.g., registering or submitting) */
+button {
+  background-color: #2d6dcf;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1f5bb8; /* Darken on hover */
+}
+
+/* Responsive Design for Mobile and Tablets */
+@media (max-width: 768px) {
+  .voting-info {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p, ul {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 200%;
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* popup */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+/* vote register alert  */
+/* Custom Alert Styles */
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f44336;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Fade out the alert */
+.custom-alert.fade-out {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+/* vote data button */
+
+/* Update button */
+.update-button {
+  padding: 8px 15px; /* Adjust padding for a better size */
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Slightly smaller border radius */
+  cursor: pointer;
+  font-size: 14px; /* Slightly smaller font size */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  width: 120px; /* Set width to make it smaller */
+  text-align: center; /* Ensure text is centered */
+}
+
+.update-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.update-button:active {
+  background-color: #387c3f; /* Even darker green when clicked */
+  transform: scale(0.98); /* Slight shrink effect */
+}
+
+/* Cancel button */
+.cancel-button {
+  padding: 8px 15px; /* Adjust padding for a better size */
+  background-color: #f44336; /* Red background */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Slightly smaller border radius */
+  cursor: pointer;
+  font-size: 14px; /* Slightly smaller font size */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  width: 120px; /* Set width to make it smaller */
+  text-align: center; /* Ensure text is centered */
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.cancel-button:active {
+  background-color: #c62828; /* Even darker red on click */
+  transform: scale(0.98); /* Slight shrink effect */
+}
+
+/* Edit button */
+.edit-button {
+  padding: 8px 15px; /* Adjust padding for a better size */
+  background-color: #2196F3; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Slightly smaller border radius */
+  cursor: pointer;
+  font-size: 14px; /* Slightly smaller font size */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  width: 120px; /* Set width to make it smaller */
+  text-align: center; /* Ensure text is centered */
+}
+
+.edit-button:hover {
+  background-color: #0b7dda; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.edit-button:active {
+  background-color: #1976d2; /* Even darker blue on click */
+  transform: scale(0.98); /* Slight shrink effect */
+}
+
+/* Delete button */
+.delete-button {
+  padding: 8px 15px; /* Adjust padding for a better size */
+  background-color: #FF5722; /* Orange background */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Slightly smaller border radius */
+  cursor: pointer;
+  font-size: 14px; /* Slightly smaller font size */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  width: 120px; /* Set width to make it smaller */
+  text-align: center; /* Ensure text is centered */
+}
+
+.delete-button:hover {
+  background-color: #e64a19; /* Darker orange on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.delete-button:active {
+  background-color: #d84315; /* Even darker orange on click */
+  transform: scale(0.98); /* Slight shrink effect */
+}
+
+  .inlinedataofvote
+  {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 20px 0px 50px;
+ }
